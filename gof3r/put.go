@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/rlmcpherson/s3gof3r"
+	"github.com/hughe/s3gof3r"
 )
 
 type putOpts struct {
