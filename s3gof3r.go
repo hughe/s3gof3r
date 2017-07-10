@@ -80,7 +80,7 @@ var DefaultConfig = &Config{
 }
 
 // http client timeout
-const clientTimeout = 5 * time.Second
+const clientTimeout = 300 * time.Second
 
 // DefaultDomain is set to the endpoint for the U.S. S3 service.
 var DefaultDomain = "s3.amazonaws.com"
