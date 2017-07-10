@@ -36,7 +36,7 @@ func (get *getOpts) Execute(args []string) (err error) {
 	conf.PartSize = get.PartSize
 	conf.Md5Check = !get.NoMd5
 	conf.NTry = get.NTry
-
+	conf.PathStyle = get.PathStyle
 	s3gof3r.SetLogger(os.Stderr, "", log.LstdFlags, get.Debug)
 
 	if get.VersionID != "" {

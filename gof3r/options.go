@@ -17,8 +17,9 @@ const (
 
 // CommonOpts are Options common to all commands
 type CommonOpts struct {
-	EndPoint string `long:"endpoint" description:"Amazon S3 endpoint" default:"s3.amazonaws.com" ini-name:"endpoint"`
-	Debug    bool   `long:"debug" description:"Enable debug logging." ini-name:"debug"`
+	EndPoint  string `long:"endpoint" description:"Amazon S3 endpoint" default:"s3.amazonaws.com" ini-name:"endpoint"`
+	Debug     bool   `long:"debug" description:"Enable debug logging." ini-name:"debug"`
+	PathStyle bool   `long:"path-style" description:"Use path style addressing instead of virtual host addressing." ini-name:"path-style"`
 }
 
 // DataOpts are Options common to cp, get, and put commands

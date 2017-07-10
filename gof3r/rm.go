@@ -29,6 +29,7 @@ func (rm *rmOpts) Execute(args []string) error {
 
 	conf := new(s3gof3r.Config)
 	*conf = *s3gof3r.DefaultConfig
+	conf.PathStyle = rm.PathStyle
 	s3 := s3gof3r.New(rm.EndPoint, k)
 	s3gof3r.SetLogger(os.Stderr, "", log.Ltime, rm.Debug)
 
